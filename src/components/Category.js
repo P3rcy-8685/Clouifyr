@@ -20,11 +20,11 @@ const Category = () => {
                 </div>
                 <div class="selector-item">
                     <input type="radio" id="radio3" name="selector" className="selector-item-radio" />
-                    <label for="radio3" className="selector-item-label">Type 1 abcdsjbd</label>
+                    <label for="radio3" className="selector-item-label">Type</label>
                 </div>
                 <div class="selector-item">
                     <input type="radio" id="radio4" name="selector" className="selector-item-radio" />
-                    <label for="radio4" className="selector-item-label">User Interface (UI)</label>
+                    <label for="radio4" className="selector-item-label">UI</label>
                 </div>
                 <div class="selector-item">
                     <input type="radio" id="radio5" name="selector" className="selector-item-radio" />
