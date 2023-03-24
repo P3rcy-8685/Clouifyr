@@ -1,14 +1,18 @@
 import { Inter } from 'next/font/google'
 import Navbar from "../components/Navbar";
-import {logo} from "./Logo.svg"
+import Category from "../components/Category";
+
 const inter = Inter({ subsets: ['latin'] })
 
 
 export default function Home() {
   return (
     <>
-      <Navbar
-        />
+      <Navbar/>
+      <div className="body">
+       <span> Explore <span style={{color:"#F3573B"}}> More</span></span>
+       <Category/>
+      </div>
     </>
   )
 }

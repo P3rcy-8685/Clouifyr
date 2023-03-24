@@ -1,5 +1,6 @@
 :root{
   background-color: #1F1F47;
+  font-family: 'Roboto';
 }
 :root {
   --primary: #3acbf7;
@@ -20,7 +21,8 @@
 }
 
 .btn-primary {
-  background-image: linear-gradient(45deg,#D40000, #FC6F6F);
+  background-image: linear-gradient(330.53deg, #D40000 -15.77%, #F15137 20.4%, #F76343 28.41%, #FC6F6F 98.47%);
+  border-radius: 20px;
 }
 
 .btn-outline {
@@ -29,13 +31,13 @@
 }
 
 .btn-medium {
-  font-size: 18px;
+  font-size: 1.5rem;
   color: #fff;
 }
 
 .btn-large {
   padding: 12px 20px;
-  font-size: 20px;
+  font-size: 1.5rem;
   color: #fff;
 }
 .navbar {
@@ -44,7 +46,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .navbar-logo {
@@ -56,7 +58,7 @@
 
 .fa-react {
   margin-left: 0.5rem;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 .nav-menu {
@@ -176,3 +178,72 @@
     display: none;
   }
 }
+
+.body{
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.5;
+/* ALign in center */
+font-weight: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.container {
+  margin-top: 3rem;
+  font-size:1.5rem;
+	margin-top: 1rem;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.selector {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+  min-width: 100%;
+  width: 100%;
+}
+
+.selector-item {
+	position: relative;
+	flex-basis: calc(70% / 3);
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.selector-item-radio {
+	appearance: none;
+	display: none;
+}
+
+.selector-item-label {
+	position: relative;
+	width: 7rem;
+	text-align: center;
+	border-radius: 9999px;
+	line-height: 200%;
+	margin-right: 1%;
+	font-weight: 400;
+	transition-duration: 0.5s;
+	transition-property: transform;
+	cursor: pointer;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+.selector-item-radio:checked + .selector-item-label {
+  background-image: linear-gradient(330.53deg, #D40000 -15.77%, #F15137 20.4%, #F76343 28.41%, #FC6F6F 98.47%);
+}
+
