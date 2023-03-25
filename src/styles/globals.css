@@ -311,6 +311,7 @@ font-weight: 20;
   width:25rem;
 }
 
-.slider > .slider-frame > .slider-list {
-  width: auto !important;
+a {
+  color: inherit;
+  text-decoration: inherit;
 }
