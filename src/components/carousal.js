@@ -1,29 +1,20 @@
-import { Carousel } from "react-responsive-carousel";
+import 'react-multi-carousel/lib/styles.css';
 import Panel from "./carComp";
-import React, { useState } from "react";
-import Logo from "../bruh.jpg"
+import React from "react";
+import Carousel from "nuka-carousel/lib/carousel";
+import games from "./games.js";
 
-const Carousal = ({image, name, description}) => {
-    const [backgroundimage, setbackgroundImage] = useState(image);
+
+const Carousal = () => {
     return (
-        <div className="panel">
-            <div className="panel-content"style={{backgroundImage:`url(${backgroundimage.src})`,
-            backgroundSize:"cover", 
-            backgroundRepeat:"no-repeat",
-            backgroundPosition:"center"
-            }}>
-                <div className="content">
-                    <div className="panel-content-heading">
-                        <h3>{name}</h3>
+        <div>
+            <Carousel wrapAround={true} slidesToShow={3} autoplay={true}>
+                {games.map((game,index) => (
+                    <div className='panel-div' key={index}>
+                    <Panel image={game.image} name={game.name} description={game.discription}/>
                     </div>
-                    <div className="panel-content-body">
-                        <p>{description}</p>
-                    </div>
-                    <div className="random">
-                        <button className="panel-content-button">Explore</button>
-                    </div>
-                </div>
-            </div>
+                ))}
+            </Carousel>
         </div>
 
     )

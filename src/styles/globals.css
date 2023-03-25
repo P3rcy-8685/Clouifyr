@@ -269,9 +269,12 @@ font-weight: 20;
 
 .panel-content{
   display: flex;
-  width: 15rem;
+  width: 25rem;
 }
 
+.panel{
+  width: 25rem;
+}
 .panel-content-heading h3{
   font-size: 2rem;
   font-weight: 400;
@@ -303,3 +306,11 @@ font-weight: 20;
   align-self: flex-end;
 }
 
+.panel-div{
+  display: flex;
+  width:25rem;
+}
+
+.slider > .slider-frame > .slider-list {
+  width: auto !important;
+}
