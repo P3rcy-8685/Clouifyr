@@ -5,7 +5,7 @@ import Category from "../components/Category";
 const inter = Inter({ subsets: ['latin'] })
 
 
-export default function Home() {
+export default function Homie() {
   return (
     <>
       <Navbar/>
