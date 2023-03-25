@@ -1,14 +1,11 @@
 import React, { useState } from "react";
 const Panel = ({image, name, download, description}) => {
     const [active, setActive] = useState(false);
-    
-    const handleClick = () => {
-        setActive(!active);
-    };
-    
+    const [backgroundimage, setbackgroundImage] = useState(image);
+    console.log(`${backgroundimage.src}`)
     return (
         <div className="panel">
-            <div className="panel-content"style={{backgroundImage:`url(${image}])`}}>
+            <div className="panel-content"style={{backgroundImage:`url(${backgroundimage.src})`}}>
                 <div className="panel-content-heading">
                     <h3>{name}</h3>
                 </div>
