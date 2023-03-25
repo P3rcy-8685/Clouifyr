@@ -8,10 +8,13 @@ import games from "./games.js";
 const Carousal = () => {
     return (
         <div>
-            <Carousel wrapAround={true} slidesToShow={3} autoplay={true}>
+            <Carousel wrapAround={true} slidesToShow={3} autoplay={true}  cellSpacing={20}>
                 {games.map((game,index) => (
                     <div className='panel-div' key={index}>
-                    <Panel image={game.image} name={game.name} description={game.discription}/>
+                    <a href="/jojo">
+                        <Panel image={game.image} name={game.name} description={game.discription}/>
+                    </a>
+
                     </div>
                 ))}
             </Carousel>
