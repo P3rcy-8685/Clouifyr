@@ -6,7 +6,7 @@ import Logo from "../bruh.jpg"
 const inter = Inter({ subsets: ['latin'] })
 
 
-export default function Home() {
+export default function Homie() {
   return (
     <>
       <Navbar/>

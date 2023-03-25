@@ -249,3 +249,7 @@ font-weight: 20;
   background-image: linear-gradient(330.53deg, #D40000 -15.77%, #F15137 20.4%, #F76343 28.41%, #FC6F6F 98.47%);
 }
 
+.game-text {
+  display: flex;
+  flex-direction: column;
+}
