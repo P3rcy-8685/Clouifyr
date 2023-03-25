@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Button from "./Button";
 import menuItems from "./MenuItems";
 import logo from "../pages/Logo.svg";
+import Image from "next/image";
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -13,7 +14,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <h1 className="navbar-logo">
-        <img src={logo}/> <i className="fab fa-react"></i>
+        <Image src={logo}/><i className="fab fa-react"></i>
       </h1>
       <div className="menu-icon" onClick={handleClick}>
         <i className={active ? "fas fa-times" : "fas fa-bars"}></i>
