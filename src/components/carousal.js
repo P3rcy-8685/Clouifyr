@@ -1,6 +1,6 @@
 import 'react-multi-carousel/lib/styles.css';
 import Panel from "./carComp";
-import React from "react";
+import React, { useEffect } from "react";
 import Carousel from "nuka-carousel/lib/carousel";
 import games from "./games.js";
 import axios from 'axios';

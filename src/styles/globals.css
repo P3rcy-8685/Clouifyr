@@ -1,6 +1,6 @@
-:root{
-  background-color: #1F1F47;
-  font-family: 'Roboto';
+:root {
+  background-color: #1f1f47;
+  font-family: "Roboto";
 }
 :root {
   --primary: #3acbf7;
@@ -21,7 +21,13 @@
 }
 
 .btn-primary {
-  background-image: linear-gradient(330.53deg, #D40000 -15.77%, #F15137 20.4%, #F76343 28.41%, #FC6F6F 98.47%);
+  background-image: linear-gradient(
+    330.53deg,
+    #d40000 -15.77%,
+    #f15137 20.4%,
+    #f76343 28.41%,
+    #fc6f6f 98.47%
+  );
   border-radius: 20px;
 }
 
@@ -41,7 +47,7 @@
   color: #fff;
 }
 .navbar {
-  background-color:transparent;
+  background-color: transparent;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -179,74 +185,79 @@
   }
 }
 
-.body{
+.body {
   color: #fff;
   font-size: 3rem;
   font-weight: 400;
   line-height: 1.5;
-/* ALign in center */
-font-weight: 20;
+  /* ALign in center */
+  font-weight: 20;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-
 .container {
   margin-top: 3rem;
-  font-size:1.5rem;
-	margin-top: 1rem;
-	position: relative;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .selector {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
   min-width: 100%;
   width: 100%;
 }
 
 .selector-item {
-	position: relative;
-	flex-basis: calc(70% / 3);
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  position: relative;
+  flex-basis: calc(70% / 3);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 8rem;
 }
 
 .selector-item-radio {
-	appearance: none;
-	display: none;
+  appearance: none;
+  display: none;
 }
 
 .selector-item-label {
-	position: relative;
-	width: 8rem;
-	text-align: center;
-	border-radius: 9999px;
-	line-height: 200%;
-	margin-right: 1%;
-	font-weight: 400;
-	transition-duration: 0.5s;
-	transition-property: transform;
-	cursor: pointer;
-	padding-left: 0.5rem;
-	padding-right: 0.5rem;
+  position: relative;
+  width: 8rem;
+  text-align: center;
+  border-radius: 9999px;
+  line-height: 200%;
+  margin-right: 1%;
+  font-weight: 400;
+  transition-duration: 0.5s;
+  transition-property: transform;
+  cursor: pointer;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .selector-item-radio:checked + .selector-item-label {
   width: 8rem;
-  background-image: linear-gradient(330.53deg, #D40000 -15.77%, #F15137 20.4%, #F76343 28.41%, #FC6F6F 98.47%);
+  background-image: linear-gradient(
+    330.53deg,
+    #d40000 -15.77%,
+    #f15137 20.4%,
+    #f76343 28.41%,
+    #fc6f6f 98.47%
+  );
 }
 
 .game-text {
@@ -254,7 +265,7 @@ font-weight: 20;
   flex-direction: column;
 }
 
-.content{
+.content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -264,32 +275,37 @@ font-weight: 20;
   line-height: 1.5;
   margin-top: 14rem;
   width: 100%;
-  background-image: linear-gradient(180deg, transparent,blue)
+  background-image: linear-gradient(180deg, transparent, blue);
 }
 
-.panel-content{
+.panel-content {
   display: flex;
   width: 25rem;
 }
 
-.panel{
+.panel {
   width: 25rem;
 }
-.panel-content-heading h3{
+.panel-content-heading h3 {
   font-size: 2rem;
   font-weight: 400;
   line-height: 1.5;
   margin: 1rem;
 }
 
-.panel-content-body{
-  font-size:1rem;
+.panel-content-body {
+  font-size: 1rem;
   margin-left: 1rem;
   margin-top: 0rem;
 }
 
-.panel-content-button{
-  background-image: linear-gradient(to right, #009c39 0%, #519c00 51%, #dbdb00 100%);
+.panel-content-button {
+  background-image: linear-gradient(
+    to right,
+    #009c39 0%,
+    #519c00 51%,
+    #dbdb00 100%
+  );
   flex: 1 1 auto;
   margin: 10px;
   padding: 0.7rem;
@@ -301,14 +317,14 @@ font-weight: 20;
   border-radius: 10px;
 }
 
-.random{
+.random {
   display: flex;
   align-self: flex-end;
 }
 
-.panel-div{
+.panel-div {
   display: flex;
-  width:25rem;
+  width: 25rem;
 }
 
 a {
@@ -316,13 +332,12 @@ a {
   text-decoration: inherit;
 }
 
-
-.appInput{
+.appInput {
   height: 100vh;
   background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fdark-plant&psig=AOvVaw21gklsw6DGd3j5hFjRfgLZ&ust=1676844256180000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCNDoouOJoP0CFQAAAAAdAAAAABAT");
 }
 
-.appForm{
+.appForm {
   display: flex;
   align-items: center;
   background-color: white;
@@ -335,8 +350,8 @@ a {
   box-shadow: 2px 2px 20px rgb(253, 234, 234);
 }
 
-.appBtn{
-  background-color: #FC1503;
+.appBtn {
+  background-color: #fc1503;
   color: white;
   border: none;
   outline: none;
@@ -346,7 +361,7 @@ a {
   cursor: pointer;
 }
 
-.appText{
+.appText {
   border: 1px solid #ccc;
   display: inline-block;
   padding: 6px 12px;
@@ -356,14 +371,39 @@ input[type="file"] {
   margin-left: 5rem;
 }
 
-.red{
-  color:red
+.red {
+  color: red;
 }
 
-.div:hover{
+.div:hover {
   background-color: rgb(211, 209, 209);
 }
 
-.true{
+.true {
   background-color: rgb(211, 209, 209);
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.loadingText {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  margin: 20rem;
+  margin-left: 55rem;
+  flex-direction: column;
 }
