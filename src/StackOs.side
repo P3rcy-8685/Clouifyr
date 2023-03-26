@@ -1,0 +1,69 @@
+# Import necessary modules from Selenium
+
+from selenium import webdriver
+
+from selenium.webdriver.chrome.options import Options
+
+# Create a ChromeOptions object to configure the ChromeDriver instance
+
+chrome_options = Options()
+
+# Add the arguments `--no-sandbox` and `--disable-dev-shm-usage` to ChromeOptions
+
+# `--no-sandbox` is used to disable the Chrome sandbox, which can sometimes cause issues with certain types of websites.
+
+# `--disable-dev-shm-usage` is used to disable the use of a shared memory segment, which can also cause issues with certain types of websites.
+
+chrome_options.add_argument('--no-sandbox')
+
+chrome_options.add_argument('--disable-dev-shm-usage')
+
+# Create a ChromeDriver instance with the above options
+
+# This creates a new Chrome browser window with the specified options.
+
+driver = webdriver.Chrome(options=chrome_options)
+
+# Use the ChromeDriver instance to open the URL "https://app.stackos.io/"
+
+# This navigates the Chrome browser window to the specified URL.
+
+driver.get("https://app.stackos.io/")
+
+# Wait for the page to load before interacting with it
+
+# This ensures that the page has fully loaded before any actions are taken on it.
+
+driver.implicitly_wait(10)
+
+# Find the search box element on the page and enter a search query
+
+# This uses the `find_element_by_name` method to locate the search box element on the page and the `send_keys` method to enter the search query.
+
+search_box = driver.find_element_by_name('connect')
+
+search_box.send_keys('Python')
+
+# Submit the search query by pressing the enter key
+
+# This uses the `send_keys` method to send the enter key to the search box element.
+
+search_box.send_keys(Keys.RETURN)
+
+# Wait for the search results page to load
+
+# This ensures that the search results have fully loaded before any actions are taken on them.
+
+driver.implicitly_wait(10)
+
+# Print the title of the search results page
+
+# This uses the `title` attribute of the `webdriver` class to get the title of the current web page.
+
+print(driver.title)
+
+# Close the browser window
+
+# This uses the `close` method of the `webdriver` class to close the current browser window.
+
+driver.close()
